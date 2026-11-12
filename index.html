@@ -12,9 +12,9 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container col-sm-6">
-        <div class="row ">
-            <h1 class="display-7 p-3 mb-1 text-center text-bg-dark">Stack Data Structure Simulator</h1>
+    <div class="container col-sm-6 mt-4">
+        <div class="row">
+            <h1 class="display-7 p-3 mb-1 text-center text-bg-dark">Stack Data Structure Simulator (LIFO)</h1>
         </div>
         <div class="row text-bg-success p-3 mb-1">
             <div class="col text-center fs-4">Operations</div>
@@ -22,27 +22,22 @@
             <div class="col text-center fs-4">Deleted from Stack</div>
         </div>
         <div class="row bg-danger">
-            
             <div class="col bg-7B8FA1">
                 <div class="d-grid gap-1 col mx-auto">
-                    <input type="text" class="form-control text-center mt-2" placeholder="data" aria-label="data">
-                    <button class="btn btn-success" type="button">Push</button>
-                    <button class="btn btn-danger" type="button">Pop</button>
-                    <button class="btn btn-warning" type="button">Peek</button>
-                    <button class="btn btn-light" type="button">Clear</button>
+                    <input type="text" id="st-data" class="form-control text-center mt-2" placeholder="data" aria-label="data">
+                    <button id="push-btn" class="btn btn-success" type="button">Push</button>
+                    <button id="pop-btn" class="btn btn-danger" type="button">Pop</button>
+                    <button id="peek-btn" class="btn btn-warning" type="button">Peek</button>
+                    <button id="clear-btn" class="btn btn-light" type="button">Clear</button>
                 </div>
             </div>
-            <div id="stack" class="d-block justify-content-center col bg-dark">
-                
+            <div id="stack" class="d-block justify-content-center col bg-dark py-2">
+                <!-- Stack elements render here -->
             </div>
-            <div class="col popped bg-9C254D">
-                <div class="row pop text-bg-danger border border-light">
-                    500
-                </div>
+            <div id="popped" class="col popped bg-9C254D">
+                <!-- Popped elements render here -->
             </div>
         </div>
-        
-       
     </div>
 </body>
 </html>
